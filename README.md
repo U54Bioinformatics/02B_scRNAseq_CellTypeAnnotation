@@ -38,4 +38,7 @@ singler <-
   
 # save the singler object  
 save(singler, file = 'singler_object.RData')
+
+# extract singler annotations as a dataframe
+singler_annot <- singler$singler[[1]]$SingleR.single.main$labels %>% as.data.frame %>% `colnames<-`(c('singler.annot')) %>% mutate(Cell = rownames(.))
 ```
