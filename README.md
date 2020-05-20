@@ -1,4 +1,14 @@
-## Annotating single cell types using the [SingleR](https://bioconductor.org/packages/devel/bioc/html/SingleR.html) package
+## Annotating single cell types using the SingleR module in BETSY  
+betsy_run.py --num_cores 40 \\  
+--input SignalFile --input_file counts.txt \\  
+--mattr keep_genes_expressed_in_perc_samples=5 \\  
+--dattr SignalFile.preprocess=counts \\  
+--output SingleRResults --output_file out-singler_annot.besty.txt \\  
+--run
+
+
+## Annotating single cell types using the [SingleR](https://bioconductor.org/packages/devel/bioc/html/SingleR.html) package  
+❗❗❗ __This is the legacy version, please use betsy instead__ ❗❗❗  
 ### writeups:  
 The input "counts_matrix.txt" file looks like so:  
 
