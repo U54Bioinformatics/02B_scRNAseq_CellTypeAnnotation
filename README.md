@@ -4,7 +4,15 @@ betsy_run.py --num_cores 40 \\
 --mattr keep_genes_expressed_in_perc_samples=5 \\  
 --dattr SignalFile.preprocess=counts \\  
 --output SingleRResults --output_file out-singler_annot.besty.txt \\  
---run
+--run  
+
+## Annotating immune single cell types using the ImmClassifier module in BETSY  
+betsy_run.py --num_cores 40 \
+--input SignalFile --input_file counts.txt \
+--dattr SignalFile.preprocess=counts \
+--output SingleRResults --output_file out-ImmClass_annot.betsy.txt \\  
+--run  
+
 
 
 ## Annotating single cell types using the [SingleR](https://bioconductor.org/packages/devel/bioc/html/SingleR.html) package  
