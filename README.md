@@ -4,7 +4,10 @@ betsy_run.py --num_cores 40 \\
 --mattr keep_genes_expressed_in_perc_samples=5 \\  
 --dattr SignalFile.preprocess=counts \\  
 --output SingleRResults --output_file out-singler_annot.besty.txt \\  
+**--mattr singler_reference=human_primary_cell_atlas \\**  
 --run  
+
+_**singler_reference**: "human_primary_cell_atlas", "blueprint_encode", "database_immune_cell_expression", "novershtern_hematopoietic", "monaco_immune", "immgen", “mouse_rnase"_
 
 ## Annotating immune single cell types using the ImmClassifier module in BETSY  
 betsy_run.py --num_cores 40 \
